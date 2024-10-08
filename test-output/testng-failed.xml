@@ -1,26 +1,15 @@
-
-<suite name="Failed suite [Suite]">
-  <test thread-count="5" name="Smoke Testing(failed)">
-    <groups>
-      <run>
-        <include name="Smoke"/>
-      </run>
-    </groups>
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
     <classes>
-     
       <class name="com.Hrms.tests.TestPIMPage">
-      
-      
         <methods>
-          <include name="deleteEmployee"/>
+          <include name="close"/>
+          <include name="setup"/>
+          <include name="searchEmployee"/>
         </methods>
-        
-        
       </class> <!-- com.Hrms.tests.TestPIMPage -->
-      
-      
-      
-      
     </classes>
-  </test> <!-- Smoke Testing(failed) -->
-</suite> <!-- Failed suite [Suite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

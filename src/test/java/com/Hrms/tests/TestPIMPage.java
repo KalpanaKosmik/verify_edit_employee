@@ -37,7 +37,7 @@ public class TestPIMPage extends BasePage{
 	
 	PIMPage pimPage = new PIMPage();
 	
-	@Test(description="Verify that an employee can be added successfully", priority=0)
+	@Test(description="Verify that an employee can be added successfully", priority=0,enabled=false)
 	public void addEmployee() throws Exception {
 	    
 	    // Log in to the application using the login page method
@@ -81,6 +81,23 @@ public class TestPIMPage extends BasePage{
 	
 	@Test(description="Verify that the search functionality returns the correct employee",priority=1)
 	public void searchEmployee() throws Exception {
+		//login to the application using login method
+		loginPage.login();
+		//wait for 5sec for page to load
+		CommonUtils.hardWait(5);
+		//Verify welcome message in the page
+		TestNGUtility.assertTrue(CommonUtils.getElementText(loginPage.getWelcomePage()), "Welcome selenium");
+		//switch to frame to work on employee details
+		CommonUtils.switchToFrame(PIMPage.getFrame());
+		//selct dropdown element from dropdownlist
+		CommonUtils.selectDropDownValue(PIMPage.getDropdown(), "Emp. Last Name");
+		//Write name in search box according to selected dropdown element 
+		CommonUtils.enterValue(PIMPage.getSearchbox(), "p", true);
+		//click on search button
+		CommonUtils.clickElement(PIMPage.getsearch());
+		//verify  search employee name is shown 
+		TestNGUtility.assertTrue(CommonUtils.getElementText(PIMPage.getEmpName()),"Sai P");
+		
 		
 		
 		

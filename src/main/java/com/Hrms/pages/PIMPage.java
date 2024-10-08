@@ -15,7 +15,9 @@ public class PIMPage{
 	private final static By by_save = By.xpath("//input[@id='btnEdit']");
 	private final static By by_back = By.xpath("//input[@class='backbutton']");
 	private final static By by_empName = By.xpath("//a[contains(text(),'Sai')]");
-	
+	private final static By by_dropdown=By.xpath("//select[@id='loc_code']");
+	private final static By by_searchbox=By.xpath("//input[@id='loc_name']");
+	private final static By by_search=By.xpath("//input[@type='button']");
 	// Getter/Setter Helping functions
 	public static void clickOnElement() throws Exception {
 		CommonUtils.clickElement(getPim());
@@ -53,5 +55,14 @@ public class PIMPage{
 		return by_empName;
 	}
 	
+	public static By getDropdown() throws Exception {
+		return by_dropdown;
+	}
+	public static By getSearchbox() throws Exception {
+		return by_searchbox;
+	}
+	public static By getsearch() throws Exception {
+		return by_search;
+	}
 	
 }
