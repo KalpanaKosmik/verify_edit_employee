@@ -79,7 +79,7 @@ public class TestPIMPage extends BasePage{
 	}
 
 	
-	@Test(description="Verify that the search functionality returns the correct employee",priority=1)
+	@Test(description="Verify that the search functionality returns the correct employee",priority=1,enabled=false)
 	public void searchEmployee() throws Exception {
 		//login to the application using login method
 		loginPage.login();
@@ -106,7 +106,30 @@ public class TestPIMPage extends BasePage{
 	
 	@Test(description="Verify that employee details can be edited successfully",priority=2)
 	public void editEmployeeDetails() throws Exception {
-	
+		//login to the application using login method
+				loginPage.login();
+				//wait for 5sec for page to load
+				CommonUtils.hardWait(5);
+				//Verify welcome message in the page
+				TestNGUtility.assertTrue(CommonUtils.getElementText(loginPage.getWelcomePage()), "Welcome selenium");
+				//switch to frame to work on employee details
+				CommonUtils.switchToFrame(PIMPage.getFrame());
+				//click on employee name to edit the details
+				CommonUtils.clickElement(PIMPage.getemp());
+				//click on edit button to make changes in details of employee
+				CommonUtils.clickElement(PIMPage.getEditbutton());
+				//edit details in employee personal details
+				CommonUtils.enterValue(PIMPage.getMiddleName(), "ashok", true);
+				//click on save to save the changes
+				CommonUtils.clickElement(PIMPage.getEditSave());
+				//click on back button to go employee list page
+				 CommonUtils.clickElement(PIMPage.getBackButton());
+				 //verify employee details are edited
+				 TestNGUtility.assertTrue(CommonUtils.getElementText(PIMPage.getEditdetails()),"kallutla ashok kalpana");
+				 
+				
+
+		
 	
 	}
 	

@@ -11,6 +11,7 @@ public class PIMPage{
 	private final static By by_addEmp = By.xpath("//*[@id='pim']/ul/li[2]/a");
 	private final static By by_firstName = By.xpath("//input[@id='txtEmpFirstName']");
 	private final static By by_lastName = By.xpath("//input[@id='txtEmpLastName']");
+	private final static By by_middlename=By.xpath("//input[@name='txtEmpMiddleName']");
 	private final static By by_iframe = By.xpath("//iframe[@id='rightMenu']");
 	private final static By by_save = By.xpath("//input[@id='btnEdit']");
 	private final static By by_back = By.xpath("//input[@class='backbutton']");
@@ -18,6 +19,11 @@ public class PIMPage{
 	private final static By by_dropdown=By.xpath("//select[@id='loc_code']");
 	private final static By by_searchbox=By.xpath("//input[@id='loc_name']");
 	private final static By by_search=By.xpath("//input[@type='button']");
+	private final static By by_empedit=By.xpath("//a[contains(text(),'kalpana')]");
+	private final static By by_iframe1 = By.xpath("//iframe[@id='_yuiResizeMonitor']");
+	private final static By by_editbutton=By.xpath("//input[@class='editbutton']");
+	private final static By by_editsave=By.xpath("//input[@name='EditMain']");
+	private final static By by_edit=By.xpath("//a[contains(text(),'ashok')]");
 	// Getter/Setter Helping functions
 	public static void clickOnElement() throws Exception {
 		CommonUtils.clickElement(getPim());
@@ -38,6 +44,9 @@ public class PIMPage{
 	public static By getLastName() throws Exception {
 		return by_lastName;
 	}
+	public static By getMiddleName() throws Exception {
+		return by_middlename;
+	}
 	
 	public static By getFrame() throws Exception {
 		return by_iframe;
@@ -45,6 +54,9 @@ public class PIMPage{
 	
 	public static By getSave() throws Exception {
 		return by_save;
+	}
+	public static By getEditSave() throws Exception {
+		return by_editsave;
 	}
 	
 	public static By getBackButton() throws Exception {
@@ -64,5 +76,18 @@ public class PIMPage{
 	public static By getsearch() throws Exception {
 		return by_search;
 	}
-	
+	public static By getemp() throws Exception {
+		return by_empedit;
+	}
+	public static By getFrame1() throws Exception {
+		return by_iframe1;
+	}
+
+	public static By getEditbutton() throws Exception {
+		return by_editbutton;
+	}
+	public static By getEditdetails() throws Exception {
+		return by_edit;
+	}
+
 }

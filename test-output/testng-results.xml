@@ -1,56 +1,52 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="8" passed="8">
+<testng-results skipped="0" failed="0" total="7" passed="7">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="16997" started-at="2024-10-08T09:33:32Z" finished-at="2024-10-08T09:33:49Z">
+  <suite name="Default suite" duration-ms="23524" started-at="2024-10-13T14:05:58Z" finished-at="2024-10-13T14:06:21Z">
     <groups>
       <group name="Smoke">
         <method signature="TestPIMPage.deleteEmployee()[pri:3, instance:com.Hrms.tests.TestPIMPage@c8c12ac]" name="deleteEmployee" class="com.Hrms.tests.TestPIMPage"/>
         <method signature="TestPIMPage.viewEmployeeList()[pri:4, instance:com.Hrms.tests.TestPIMPage@c8c12ac]" name="viewEmployeeList" class="com.Hrms.tests.TestPIMPage"/>
       </group> <!-- Smoke -->
     </groups>
-    <test name="Default test" duration-ms="16997" started-at="2024-10-08T09:33:32Z" finished-at="2024-10-08T09:33:49Z">
+    <test name="Default test" duration-ms="23524" started-at="2024-10-13T14:05:58Z" finished-at="2024-10-13T14:06:21Z">
       <class name="com.Hrms.tests.TestPIMPage">
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.Hrms.tests.TestPIMPage@c8c12ac]" name="setup" is-config="true" duration-ms="8569" started-at="2024-10-08T15:03:32Z" finished-at="2024-10-08T15:03:40Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.Hrms.tests.TestPIMPage@c8c12ac]" name="setup" is-config="true" duration-ms="10421" started-at="2024-10-13T19:35:58Z" finished-at="2024-10-13T19:36:08Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="searchEmployee()[pri:1, instance:com.Hrms.tests.TestPIMPage@c8c12ac]" name="searchEmployee" duration-ms="8311" started-at="2024-10-08T15:03:40Z" description="Verify that the search functionality returns the correct employee" finished-at="2024-10-08T15:03:49Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- searchEmployee -->
-        <test-method status="PASS" signature="editEmployeeDetails()[pri:2, instance:com.Hrms.tests.TestPIMPage@c8c12ac]" name="editEmployeeDetails" duration-ms="0" started-at="2024-10-08T15:03:49Z" description="Verify that employee details can be edited successfully" finished-at="2024-10-08T15:03:49Z">
+        <test-method status="PASS" signature="editEmployeeDetails()[pri:2, instance:com.Hrms.tests.TestPIMPage@c8c12ac]" name="editEmployeeDetails" duration-ms="13024" started-at="2024-10-13T19:36:08Z" description="Verify that employee details can be edited successfully" finished-at="2024-10-13T19:36:21Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- editEmployeeDetails -->
-        <test-method status="PASS" signature="deleteEmployee()[pri:3, instance:com.Hrms.tests.TestPIMPage@c8c12ac]" name="deleteEmployee" duration-ms="16" started-at="2024-10-08T15:03:49Z" description="Verify that an employee can be deleted successfully" finished-at="2024-10-08T15:03:49Z">
+        <test-method status="PASS" signature="deleteEmployee()[pri:3, instance:com.Hrms.tests.TestPIMPage@c8c12ac]" name="deleteEmployee" duration-ms="3" started-at="2024-10-13T19:36:21Z" description="Verify that an employee can be deleted successfully" finished-at="2024-10-13T19:36:21Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- deleteEmployee -->
-        <test-method status="PASS" signature="viewEmployeeList()[pri:4, instance:com.Hrms.tests.TestPIMPage@c8c12ac]" name="viewEmployeeList" duration-ms="0" started-at="2024-10-08T15:03:49Z" description="Verify that the employee list is displayed correctly with accurate information" depends-on-methods="com.Hrms.tests.TestPIMPage.deleteEmployee" finished-at="2024-10-08T15:03:49Z">
+        <test-method status="PASS" signature="viewEmployeeList()[pri:4, instance:com.Hrms.tests.TestPIMPage@c8c12ac]" name="viewEmployeeList" duration-ms="3" started-at="2024-10-13T19:36:21Z" description="Verify that the employee list is displayed correctly with accurate information" depends-on-methods="com.Hrms.tests.TestPIMPage.deleteEmployee" finished-at="2024-10-13T19:36:21Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- viewEmployeeList -->
-        <test-method status="PASS" signature="addEmployeePhotos()[pri:5, instance:com.Hrms.tests.TestPIMPage@c8c12ac]" name="addEmployeePhotos" duration-ms="0" started-at="2024-10-08T15:03:49Z" description="Verify that photos can be added to employee profiles" finished-at="2024-10-08T15:03:49Z">
+        <test-method status="PASS" signature="addEmployeePhotos()[pri:5, instance:com.Hrms.tests.TestPIMPage@c8c12ac]" name="addEmployeePhotos" duration-ms="2" started-at="2024-10-13T19:36:21Z" description="Verify that photos can be added to employee profiles" finished-at="2024-10-13T19:36:21Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addEmployeePhotos -->
-        <test-method status="PASS" signature="editEmploymentStatus()[pri:7, instance:com.Hrms.tests.TestPIMPage@c8c12ac]" name="editEmploymentStatus" duration-ms="0" started-at="2024-10-08T15:03:49Z" description="Verify that the employment status of an employee can be updated" finished-at="2024-10-08T15:03:49Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- editEmploymentStatus -->
-        <test-method status="PASS" signature="viewEmployeeDetails()[pri:6, instance:com.Hrms.tests.TestPIMPage@c8c12ac]" name="viewEmployeeDetails" duration-ms="0" started-at="2024-10-08T15:03:49Z" description="Verify that employee details are correctly displayed" finished-at="2024-10-08T15:03:49Z">
+        <test-method status="PASS" signature="viewEmployeeDetails()[pri:6, instance:com.Hrms.tests.TestPIMPage@c8c12ac]" name="viewEmployeeDetails" duration-ms="2" started-at="2024-10-13T19:36:21Z" description="Verify that employee details are correctly displayed" finished-at="2024-10-13T19:36:21Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- viewEmployeeDetails -->
-        <test-method status="PASS" signature="close()[pri:0, instance:com.Hrms.tests.TestPIMPage@c8c12ac]" name="close" is-config="true" duration-ms="0" started-at="2024-10-08T15:03:49Z" finished-at="2024-10-08T15:03:49Z">
+        <test-method status="PASS" signature="editEmploymentStatus()[pri:7, instance:com.Hrms.tests.TestPIMPage@c8c12ac]" name="editEmploymentStatus" duration-ms="3" started-at="2024-10-13T19:36:21Z" description="Verify that the employment status of an employee can be updated" finished-at="2024-10-13T19:36:21Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- close -->
-        <test-method status="PASS" signature="filterEmployeeList()[pri:8, instance:com.Hrms.tests.TestPIMPage@c8c12ac]" name="filterEmployeeList" duration-ms="0" started-at="2024-10-08T15:03:49Z" description="Verify that the employee list can be filtered based on various criteria" finished-at="2024-10-08T15:03:49Z">
+        </test-method> <!-- editEmploymentStatus -->
+        <test-method status="PASS" signature="filterEmployeeList()[pri:8, instance:com.Hrms.tests.TestPIMPage@c8c12ac]" name="filterEmployeeList" duration-ms="2" started-at="2024-10-13T19:36:21Z" description="Verify that the employee list can be filtered based on various criteria" finished-at="2024-10-13T19:36:21Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- filterEmployeeList -->
+        <test-method status="PASS" signature="close()[pri:0, instance:com.Hrms.tests.TestPIMPage@c8c12ac]" name="close" is-config="true" duration-ms="0" started-at="2024-10-13T19:36:21Z" finished-at="2024-10-13T19:36:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
       </class> <!-- com.Hrms.tests.TestPIMPage -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
