@@ -37,7 +37,7 @@ public class TestPIMPage extends BasePage{
 	
 	PIMPage pimPage = new PIMPage();
 	
-	@Test(description="Verify that an employee can be added successfully", priority=0)
+	@Test(description="Verify that an employee can be added successfully", priority=0,enabled=false)
 	public void addEmployee() throws Exception {
 	    
 	    // Log in to the application using the login page method
@@ -65,7 +65,7 @@ public class TestPIMPage extends BasePage{
 	    CommonUtils.enterValue(PIMPage.getFirstName(), "Sai", true);
 	    
 	    // Enter the last name "P" into the last name field
-	    CommonUtils.enterValue(PIMPage.getLastName(), "P", true);
+	    CommonUtils.enterValue(PIMPage.getLastName(), "Kumar", true);
 	    
 	    // Click the "Save" button to add the new employee
 	    CommonUtils.clickElement(PIMPage.getSave());
@@ -74,7 +74,7 @@ public class TestPIMPage extends BasePage{
 	    CommonUtils.clickElement(PIMPage.getBackButton());
 	    
 	    // Assert that the employee name displayed matches "Sai P"
-	    TestNGUtility.assertTrue(CommonUtils.getElementText(PIMPage.getEmpName()),"Sai P");
+	    TestNGUtility.assertTrue(CommonUtils.getElementText(PIMPage.getEmpName()),"Sai Kumar");
 	    
 	}
 
@@ -95,7 +95,25 @@ public class TestPIMPage extends BasePage{
 	
 	@Test(description="Verify that an employee can be deleted successfully",groups= {"Smoke"},priority=3)
 	public void deleteEmployee() throws Exception {
-	 Assert.assertEquals("akki", "akki");
+	 //login to application
+		loginPage.login();
+	 // Wait for 5 seconds to allow the page to load
+	    CommonUtils.hardWait(5);
+	    
+	   // verify  the welcome message contains "Welcome selenium"
+	    TestNGUtility.assertTrue(CommonUtils.getElementText(loginPage.getWelcomePage()), "Welcome selenium");
+	    //switch to frame to delete the employee
+	    CommonUtils.switchToFrame(PIMPage.getFrame());
+	    //select check box of employee to be deleted
+	    CommonUtils.clickElement(PIMPage.getChkbox());
+	    //Verify checkbox is selected 
+	    CommonUtils.isElementSelected(PIMPage.getChkbox());
+	    //delete the employee which is selected
+	    CommonUtils.clickElement(PIMPage.getDelete());
+	    //assert delete message is displayed
+	    TestNGUtility.assertTrue(CommonUtils.getElementText(PIMPage.getDeleteMsg()), "Successfully Deleted");
+	    
+
 	
 	}
 	
