@@ -15,9 +15,13 @@ public class PIMPage{
 	private final static By by_save = By.xpath("//input[@id='btnEdit']");
 	private final static By by_back = By.xpath("//input[@class='backbutton']");
 	private final static By by_empName = By.xpath("//a[contains(text(),'Sai')]");
+	private final static By by_empedit=By.xpath("//a[contains(text(),'kalpana')]");
 	private final static By by_chkbox = By.xpath("//input[@value='0036']");
 	private final static By by_delete =By.xpath("//input[@value='Delete']");
 	private final static By by_deletemsg =By.xpath("//span[@class='failure']");
+	private final static By by_empphoto=By.xpath("//span[@id='empname']");
+	private final static By by_choosefile = By.id("photofile");
+	private final static By by_savephoto =By.xpath("//input[@onclick='addPic();']");
 	
 	// Getter/Setter Helping functions
 	public static void clickOnElement() throws Exception {
@@ -63,6 +67,18 @@ public class PIMPage{
 	}
 	public static By getChkbox() throws Exception{
 		return by_chkbox;
+	}
+	public static By getemp() throws Exception {
+		return by_empedit;
+	}
+	public static By getempphoto() throws Exception {
+		return by_empphoto;
+	}
+	public static By getChoosefile() throws Exception {
+		return by_choosefile;
+	}
+	public static By getSavePhoto() throws Exception {
+		return by_savephoto;
 	}
 	
 	

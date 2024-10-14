@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>6/1/1</td>
+<td>Tests passed/Failed/Skipped:</td><td>6/0/0</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Oct 14 13:02:46 IST 2024</td>
+<td>Started on:</td><td>Mon Oct 14 14:58:10 IST 2024</td>
 </tr>
-<tr><td>Total time:</td><td>16 seconds (16172 ms)</td>
+<tr><td>Total time:</td><td>20 seconds (20692 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,96 +67,6 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-failed'>
-<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='com.Hrms.tests.TestPIMPage.deleteEmployee()'><b>deleteEmployee</b><br>Test class: com.Hrms.tests.TestPIMPage<br>Test method: Verify that an employee can be deleted successfully</td>
-<td><div><pre>java.lang.AssertionError: Unable to locate element: //input[@value=&apos;0036&apos;]
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: &apos;4.10.0&apos;, revision: &apos;c14d967899&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_421&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [b4cc26fb-2885-4afc-8011-0903eba65612, findElement {using=xpath, value=//input[@value=&apos;0036&apos;]}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 131.0.2, moz:accessibilityChecks: false, moz:buildID: 20241008210941, moz:geckodriverVersion: 0.35.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 4976, moz:profile: C:\Users\KALPANA\AppData\Lo..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
-Session ID: b4cc26fb-2885-4afc-8011-0903eba65612
-	at org.testng.Assert.fail(Assert.java:94)
-	at com.Hrms.utils.TestNGUtility.assertFail(TestNGUtility.java:34)
-	at com.Hrms.utils.CommonUtils.findElement(CommonUtils.java:75)
-	at com.Hrms.utils.CommonUtils.clickElement(CommonUtils.java:109)
-	at com.Hrms.tests.TestPIMPage.deleteEmployee(TestPIMPage.java:108)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:823)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1131)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:778)
-	at org.testng.TestRunner.run(TestRunner.java:632)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1225)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1150)
-	at org.testng.TestNG.runSuites(TestNG.java:1075)
-	at org.testng.TestNG.run(TestNG.java:1047)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:137)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:58)
-</pre></div><a href='#' onClick='toggleBox("stack-trace727119352", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace727119352'><pre>java.lang.AssertionError: Unable to locate element: //input[@value=&apos;0036&apos;]
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: &apos;4.10.0&apos;, revision: &apos;c14d967899&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_421&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [b4cc26fb-2885-4afc-8011-0903eba65612, findElement {using=xpath, value=//input[@value=&apos;0036&apos;]}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 131.0.2, moz:accessibilityChecks: false, moz:buildID: 20241008210941, moz:geckodriverVersion: 0.35.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 4976, moz:profile: C:\Users\KALPANA\AppData\Lo..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
-Session ID: b4cc26fb-2885-4afc-8011-0903eba65612
-	at org.testng.Assert.fail(Assert.java:94)
-	at com.Hrms.utils.TestNGUtility.assertFail(TestNGUtility.java:34)
-	at com.Hrms.utils.CommonUtils.findElement(CommonUtils.java:75)
-	at com.Hrms.utils.CommonUtils.clickElement(CommonUtils.java:109)
-	at com.Hrms.tests.TestPIMPage.deleteEmployee(TestPIMPage.java:108)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:823)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1131)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:778)
-	at org.testng.TestRunner.run(TestRunner.java:632)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1225)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1150)
-	at org.testng.TestNG.runSuites(TestNG.java:1075)
-	at org.testng.TestNG.run(TestNG.java:1047)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:137)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:58)
-</pre></div></td>
-<td>6</td>
-<td>com.Hrms.tests.TestPIMPage@c8c12ac</td></tr>
-</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -167,85 +77,33 @@ Session ID: b4cc26fb-2885-4afc-8011-0903eba65612
 <tr>
 <td title='com.Hrms.tests.TestPIMPage.addEmployeePhotos()'><b>addEmployeePhotos</b><br>Test class: com.Hrms.tests.TestPIMPage<br>Test method: Verify that photos can be added to employee profiles</td>
 <td></td>
-<td>0</td>
-<td>com.Hrms.tests.TestPIMPage@c8c12ac</td></tr>
+<td>11</td>
+<td>com.Hrms.tests.TestPIMPage@6adbc9d</td></tr>
 <tr>
 <td title='com.Hrms.tests.TestPIMPage.editEmployeeDetails()'><b>editEmployeeDetails</b><br>Test class: com.Hrms.tests.TestPIMPage<br>Test method: Verify that employee details can be edited successfully</td>
 <td></td>
 <td>0</td>
-<td>com.Hrms.tests.TestPIMPage@c8c12ac</td></tr>
+<td>com.Hrms.tests.TestPIMPage@6adbc9d</td></tr>
 <tr>
 <td title='com.Hrms.tests.TestPIMPage.editEmploymentStatus()'><b>editEmploymentStatus</b><br>Test class: com.Hrms.tests.TestPIMPage<br>Test method: Verify that the employment status of an employee can be updated</td>
 <td></td>
 <td>0</td>
-<td>com.Hrms.tests.TestPIMPage@c8c12ac</td></tr>
+<td>com.Hrms.tests.TestPIMPage@6adbc9d</td></tr>
 <tr>
 <td title='com.Hrms.tests.TestPIMPage.filterEmployeeList()'><b>filterEmployeeList</b><br>Test class: com.Hrms.tests.TestPIMPage<br>Test method: Verify that the employee list can be filtered based on various criteria</td>
 <td></td>
 <td>0</td>
-<td>com.Hrms.tests.TestPIMPage@c8c12ac</td></tr>
+<td>com.Hrms.tests.TestPIMPage@6adbc9d</td></tr>
 <tr>
 <td title='com.Hrms.tests.TestPIMPage.searchEmployee()'><b>searchEmployee</b><br>Test class: com.Hrms.tests.TestPIMPage<br>Test method: Verify that the search functionality returns the correct employee</td>
 <td></td>
 <td>0</td>
-<td>com.Hrms.tests.TestPIMPage@c8c12ac</td></tr>
+<td>com.Hrms.tests.TestPIMPage@6adbc9d</td></tr>
 <tr>
 <td title='com.Hrms.tests.TestPIMPage.viewEmployeeDetails()'><b>viewEmployeeDetails</b><br>Test class: com.Hrms.tests.TestPIMPage<br>Test method: Verify that employee details are correctly displayed</td>
 <td></td>
 <td>0</td>
-<td>com.Hrms.tests.TestPIMPage@c8c12ac</td></tr>
-</table><p>
-<table width='100%' border='1' class='invocation-skipped'>
-<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='com.Hrms.tests.TestPIMPage.viewEmployeeList()'><b>viewEmployeeList</b><br>Test class: com.Hrms.tests.TestPIMPage<br>Test method: Verify that the employee list is displayed correctly with accurate information</td>
-<td><div><pre>java.lang.Throwable: Method TestPIMPage.viewEmployeeList()[pri:4, instance:com.Hrms.tests.TestPIMPage@c8c12ac] depends on not successfully finished methods
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1040)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:778)
-	at org.testng.TestRunner.run(TestRunner.java:632)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1225)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1150)
-	at org.testng.TestNG.runSuites(TestNG.java:1075)
-	at org.testng.TestNG.run(TestNG.java:1047)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:137)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:58)
-</pre></div><a href='#' onClick='toggleBox("stack-trace2003305136", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace2003305136'><pre>java.lang.Throwable: Method TestPIMPage.viewEmployeeList()[pri:4, instance:com.Hrms.tests.TestPIMPage@c8c12ac] depends on not successfully finished methods
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1040)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:778)
-	at org.testng.TestRunner.run(TestRunner.java:632)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1225)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1150)
-	at org.testng.TestNG.runSuites(TestNG.java:1075)
-	at org.testng.TestNG.run(TestNG.java:1047)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:137)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:58)
-</pre></div></td>
-<td>0</td>
-<td>null</td></tr>
+<td>com.Hrms.tests.TestPIMPage@6adbc9d</td></tr>
 </table><p>
 </body>
 </html>

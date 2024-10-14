@@ -292,7 +292,16 @@ public class CommonUtils{
 			TestNGUtility.assertFail(e.getMessage());
 		}
 	}
-	
+	//This method is used to upload a file using sendkeys method
+	public static void uploadFile(By by ,String path) {
+		try {
+			findElement(by).sendKeys(path);
+		}
+		catch (Exception e) {
+			TestNGUtility.assertFail(e.getMessage());
+		}
+		
+	}
 	// -------------------- Properties Implementations ----------------------
 	//This method read the a properties file
 	public static Properties readPropertiesFile(String fileName) throws IOException {

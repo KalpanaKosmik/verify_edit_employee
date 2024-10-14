@@ -1,133 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="1" failed="1" total="8" passed="6">
+<testng-results skipped="0" failed="0" total="6" passed="6">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="16172" started-at="2024-10-14T07:32:46Z" finished-at="2024-10-14T07:33:02Z">
+  <suite name="Default suite" duration-ms="20692" started-at="2024-10-14T09:28:10Z" finished-at="2024-10-14T09:28:30Z">
     <groups>
-      <group name="Smoke">
-        <method signature="TestPIMPage.deleteEmployee()[pri:3, instance:com.Hrms.tests.TestPIMPage@c8c12ac]" name="deleteEmployee" class="com.Hrms.tests.TestPIMPage"/>
-        <method signature="TestPIMPage.viewEmployeeList()[pri:4, instance:com.Hrms.tests.TestPIMPage@c8c12ac]" name="viewEmployeeList" class="com.Hrms.tests.TestPIMPage"/>
-      </group> <!-- Smoke -->
     </groups>
-    <test name="Default test" duration-ms="16172" started-at="2024-10-14T07:32:46Z" finished-at="2024-10-14T07:33:02Z">
+    <test name="Default test" duration-ms="20692" started-at="2024-10-14T09:28:10Z" finished-at="2024-10-14T09:28:30Z">
       <class name="com.Hrms.tests.TestPIMPage">
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.Hrms.tests.TestPIMPage@c8c12ac]" name="setup" is-config="true" duration-ms="9165" started-at="2024-10-14T13:02:46Z" finished-at="2024-10-14T13:02:55Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.Hrms.tests.TestPIMPage@6adbc9d]" name="setup" is-config="true" duration-ms="9386" started-at="2024-10-14T14:58:10Z" finished-at="2024-10-14T14:58:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="searchEmployee()[pri:1, instance:com.Hrms.tests.TestPIMPage@c8c12ac]" name="searchEmployee" duration-ms="20" started-at="2024-10-14T13:02:55Z" description="Verify that the search functionality returns the correct employee" finished-at="2024-10-14T13:02:55Z">
+        <test-method status="PASS" signature="searchEmployee()[pri:1, instance:com.Hrms.tests.TestPIMPage@6adbc9d]" name="searchEmployee" duration-ms="15" started-at="2024-10-14T14:58:19Z" description="Verify that the search functionality returns the correct employee" finished-at="2024-10-14T14:58:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- searchEmployee -->
-        <test-method status="PASS" signature="editEmployeeDetails()[pri:2, instance:com.Hrms.tests.TestPIMPage@c8c12ac]" name="editEmployeeDetails" duration-ms="3" started-at="2024-10-14T13:02:55Z" description="Verify that employee details can be edited successfully" finished-at="2024-10-14T13:02:55Z">
+        <test-method status="PASS" signature="editEmployeeDetails()[pri:2, instance:com.Hrms.tests.TestPIMPage@6adbc9d]" name="editEmployeeDetails" duration-ms="2" started-at="2024-10-14T14:58:19Z" description="Verify that employee details can be edited successfully" finished-at="2024-10-14T14:58:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- editEmployeeDetails -->
-        <test-method status="FAIL" signature="deleteEmployee()[pri:3, instance:com.Hrms.tests.TestPIMPage@c8c12ac]" name="deleteEmployee" duration-ms="6853" started-at="2024-10-14T13:02:55Z" description="Verify that an employee can be deleted successfully" finished-at="2024-10-14T13:03:02Z">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[Unable to locate element: //input[@value='0036']
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.10.0', revision: 'c14d967899'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_421'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [b4cc26fb-2885-4afc-8011-0903eba65612, findElement {using=xpath, value=//input[@value='0036']}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 131.0.2, moz:accessibilityChecks: false, moz:buildID: 20241008210941, moz:geckodriverVersion: 0.35.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 4976, moz:profile: C:\Users\KALPANA\AppData\Lo..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
-Session ID: b4cc26fb-2885-4afc-8011-0903eba65612]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Unable to locate element: //input[@value='0036']
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.10.0', revision: 'c14d967899'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_421'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [b4cc26fb-2885-4afc-8011-0903eba65612, findElement {using=xpath, value=//input[@value='0036']}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 131.0.2, moz:accessibilityChecks: false, moz:buildID: 20241008210941, moz:geckodriverVersion: 0.35.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 4976, moz:profile: C:\Users\KALPANA\AppData\Lo..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
-Session ID: b4cc26fb-2885-4afc-8011-0903eba65612
-	at org.testng.Assert.fail(Assert.java:94)
-	at com.Hrms.utils.TestNGUtility.assertFail(TestNGUtility.java:34)
-	at com.Hrms.utils.CommonUtils.findElement(CommonUtils.java:75)
-	at com.Hrms.utils.CommonUtils.clickElement(CommonUtils.java:109)
-	at com.Hrms.tests.TestPIMPage.deleteEmployee(TestPIMPage.java:108)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:823)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1131)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:778)
-	at org.testng.TestRunner.run(TestRunner.java:632)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1225)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1150)
-	at org.testng.TestNG.runSuites(TestNG.java:1075)
-	at org.testng.TestNG.run(TestNG.java:1047)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:137)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:58)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- deleteEmployee -->
-        <test-method status="SKIP" signature="viewEmployeeList()[pri:4, instance:com.Hrms.tests.TestPIMPage@c8c12ac]" name="viewEmployeeList" duration-ms="0" started-at="2024-10-14T13:03:02Z" description="Verify that the employee list is displayed correctly with accurate information" depends-on-methods="com.Hrms.tests.TestPIMPage.deleteEmployee" finished-at="2024-10-14T13:03:02Z">
-          <exception class="java.lang.Throwable">
-            <message>
-              <![CDATA[Method TestPIMPage.viewEmployeeList()[pri:4, instance:com.Hrms.tests.TestPIMPage@c8c12ac] depends on not successfully finished methods]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method TestPIMPage.viewEmployeeList()[pri:4, instance:com.Hrms.tests.TestPIMPage@c8c12ac] depends on not successfully finished methods
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1040)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:778)
-	at org.testng.TestRunner.run(TestRunner.java:632)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1225)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1150)
-	at org.testng.TestNG.runSuites(TestNG.java:1075)
-	at org.testng.TestNG.run(TestNG.java:1047)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:137)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:58)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.Throwable -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- viewEmployeeList -->
-        <test-method status="PASS" signature="addEmployeePhotos()[pri:5, instance:com.Hrms.tests.TestPIMPage@c8c12ac]" name="addEmployeePhotos" duration-ms="16" started-at="2024-10-14T13:03:02Z" description="Verify that photos can be added to employee profiles" finished-at="2024-10-14T13:03:02Z">
+        <test-method status="PASS" signature="addEmployeePhotos()[pri:5, instance:com.Hrms.tests.TestPIMPage@6adbc9d]" name="addEmployeePhotos" duration-ms="11176" started-at="2024-10-14T14:58:19Z" description="Verify that photos can be added to employee profiles" finished-at="2024-10-14T14:58:30Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addEmployeePhotos -->
-        <test-method status="PASS" signature="viewEmployeeDetails()[pri:6, instance:com.Hrms.tests.TestPIMPage@c8c12ac]" name="viewEmployeeDetails" duration-ms="0" started-at="2024-10-14T13:03:02Z" description="Verify that employee details are correctly displayed" finished-at="2024-10-14T13:03:02Z">
+        <test-method status="PASS" signature="viewEmployeeDetails()[pri:6, instance:com.Hrms.tests.TestPIMPage@6adbc9d]" name="viewEmployeeDetails" duration-ms="5" started-at="2024-10-14T14:58:30Z" description="Verify that employee details are correctly displayed" finished-at="2024-10-14T14:58:30Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- viewEmployeeDetails -->
-        <test-method status="PASS" signature="editEmploymentStatus()[pri:7, instance:com.Hrms.tests.TestPIMPage@c8c12ac]" name="editEmploymentStatus" duration-ms="0" started-at="2024-10-14T13:03:02Z" description="Verify that the employment status of an employee can be updated" finished-at="2024-10-14T13:03:02Z">
+        <test-method status="PASS" signature="editEmploymentStatus()[pri:7, instance:com.Hrms.tests.TestPIMPage@6adbc9d]" name="editEmploymentStatus" duration-ms="3" started-at="2024-10-14T14:58:30Z" description="Verify that the employment status of an employee can be updated" finished-at="2024-10-14T14:58:30Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- editEmploymentStatus -->
-        <test-method status="PASS" signature="filterEmployeeList()[pri:8, instance:com.Hrms.tests.TestPIMPage@c8c12ac]" name="filterEmployeeList" duration-ms="0" started-at="2024-10-14T13:03:02Z" description="Verify that the employee list can be filtered based on various criteria" finished-at="2024-10-14T13:03:02Z">
+        <test-method status="PASS" signature="filterEmployeeList()[pri:8, instance:com.Hrms.tests.TestPIMPage@6adbc9d]" name="filterEmployeeList" duration-ms="3" started-at="2024-10-14T14:58:30Z" description="Verify that the employee list can be filtered based on various criteria" finished-at="2024-10-14T14:58:30Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- filterEmployeeList -->
-        <test-method status="PASS" signature="close()[pri:0, instance:com.Hrms.tests.TestPIMPage@c8c12ac]" name="close" is-config="true" duration-ms="0" started-at="2024-10-14T13:03:02Z" finished-at="2024-10-14T13:03:02Z">
+        <test-method status="PASS" signature="close()[pri:0, instance:com.Hrms.tests.TestPIMPage@6adbc9d]" name="close" is-config="true" duration-ms="0" started-at="2024-10-14T14:58:30Z" finished-at="2024-10-14T14:58:30Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- close -->

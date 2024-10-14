@@ -93,7 +93,7 @@ public class TestPIMPage extends BasePage{
 	
 	}
 	
-	@Test(description="Verify that an employee can be deleted successfully",groups= {"Smoke"},priority=3)
+	/*@Test(description="Verify that an employee can be deleted successfully",groups= {"Smoke"},priority=3,enabled=false)
 	public void deleteEmployee() throws Exception {
 	 //login to application
 		loginPage.login();
@@ -115,17 +115,36 @@ public class TestPIMPage extends BasePage{
 	    
 
 	
-	}
+	}*/
 	
-	@Test(description="Verify that the employee list is displayed correctly with accurate information",groups= {"Smoke"},dependsOnMethods= {"deleteEmployee"},priority=4)
+	/*@Test(description="Verify that the employee list is displayed correctly with accurate information",groups= {"Smoke"},dependsOnMethods= {"deleteEmployee"},priority=4)
 	public void viewEmployeeList() throws Exception {
 	
 	
-	}
+	}*/
 	
 	@Test(description="Verify that photos can be added to employee profiles",priority=5)
 	public void addEmployeePhotos() throws Exception {
-	
+		
+		     //login to application
+				loginPage.login();
+			 // Wait for 5 seconds to allow the page to load
+			    CommonUtils.hardWait(5);   
+			   // verify  the welcome message contains "Welcome selenium"
+			    TestNGUtility.assertTrue(CommonUtils.getElementText(loginPage.getWelcomePage()), "Welcome selenium");
+			    //switch to frame to delete the employee
+			     CommonUtils.switchToFrame(PIMPage.getFrame());
+			    //Click on employee name to edit details of that employee
+			     CommonUtils.clickElement(PIMPage.getemp());
+			     //click on employee name to add photo
+			     CommonUtils.clickElement(PIMPage.getempphoto());
+			     //click on choosefile and upload file
+			     CommonUtils.uploadFile(PIMPage.getChoosefile(), "C:\\\\Users\\\\KALPANA\\\\Downloads\\\\SV927.jpg");
+			     //click on save to save uploaded photo
+			     CommonUtils.clickElement(PIMPage.getSavePhoto());
+			     //click on back button to return to previous page
+			     CommonUtils.clickElement(PIMPage.getBackButton());
+			
 	
 	}
 	

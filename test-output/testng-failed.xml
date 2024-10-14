@@ -5,10 +5,9 @@
     <classes>
       <class name="com.Hrms.tests.TestPIMPage">
         <methods>
-          <include name="viewEmployeeList"/>
+          <include name="addEmployeePhotos"/>
           <include name="close"/>
           <include name="setup"/>
-          <include name="deleteEmployee"/>
         </methods>
       </class> <!-- com.Hrms.tests.TestPIMPage -->
     </classes>
